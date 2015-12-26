@@ -13,6 +13,7 @@ public class QuestionsScreenController : MonoBehaviour {
     public TallyMarksWidgetController TallyMarksWidget;
     public static event System.Action<bool> LevelCompleted;
     public NumpadController Numpad;
+    public GameObject PauseMenu;
 
     int _currentQuestionIndex;
     List<Question> _questionsList;
@@ -55,7 +56,8 @@ public class QuestionsScreenController : MonoBehaviour {
         while(seconds < totalTime)
         {
             yield return new WaitForSeconds(1f);
-            seconds++;
+            if(!GameController.Instance.IsGamePaused)
+                seconds++;
             Time.text = (totalTime - seconds).ToString() + " Secs";
         }
 
@@ -137,6 +139,17 @@ public class QuestionsScreenController : MonoBehaviour {
             GameController.Instance.IsGamePaused = true;
             GameController.Instance.LoadScene(GameConstants.GAME_PLAY_SCENE);
         }
+    }
+
+    public void OnPauseClicked()
+    {
+        GameController.Instance.IsGamePaused = true;
+        PauseMenu.SetActive(true);
+    }
+
+    public void OnBoardClicked()
+    {
+
     }
 
     void OnDestroy()
