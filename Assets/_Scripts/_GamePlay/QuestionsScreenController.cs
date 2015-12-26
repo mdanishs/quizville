@@ -9,9 +9,10 @@ public class QuestionsScreenController : MonoBehaviour {
     public Text LevelNumber;
     public Text Heading;
     public Text Time;
-    public InputField AnswerBox;
+    public Text AnswerBox;
     public TallyMarksWidgetController TallyMarksWidget;
     public static event System.Action<bool> LevelCompleted;
+    public NumpadController Numpad;
 
     int _currentQuestionIndex;
     List<Question> _questionsList;
@@ -40,6 +41,11 @@ public class QuestionsScreenController : MonoBehaviour {
         
     }
     
+    void Update()
+    {
+        AnswerBox.text = Numpad.Text;
+    }
+
     public IEnumerator TimerTick()
     {
         
@@ -69,12 +75,13 @@ public class QuestionsScreenController : MonoBehaviour {
         QuestionText.GetComponent<Animator>().SetTrigger("FadeOut");
         AnswerBox.text = "";
 
-        Heading.text = _levelConfig.NumberOfQuestions - _currentQuestionIndex + " MORE TO GO";
+        Heading.text = (_levelConfig.NumberOfQuestions - _currentQuestionIndex).ToString();
         
     }
 
     public void OnNextClicked()
     {
+        Numpad.ClearText();
         AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
         Question question = _questionsList[_currentQuestionIndex];
         print(_currentQuestionIndex);
