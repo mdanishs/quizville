@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: c8d5991241faae04b91cdf15ee15db15
+timeCreated: 1451158828
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Title
+    21300002: Popup
+    21300004: ButtonL
+    21300006: ButtonM
+    21300008: ButtonS
+    21300010: EmptyCounter
+    21300012: FilledCounter
+    21300014: ButtonNumber
+    21300016: ButtonClear
+    21300018: ButtonPauseClicked
+    21300020: ButtonPause
+    21300022: InGameCounter
+    21300024: Cross
+    21300026: Tick
+    21300028: Pencil
+    21300030: ButtonBoardClicked
+    21300032: ButtonBoard
+    21300034: ButtonDuster
+    21300036: ButtonMenu
+    21300038: ButtonXS
+    21300040: InGameHeader
+    21300042: SpriteSheet_21
+    21300044: PinBoard
+    21300046: SpriteSheet_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Title
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1811
+        width: 1048
+        height: 233
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Popup
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1040
+        width: 972
+        height: 1002
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonL
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1590
+        width: 1045
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonM
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1390
+        width: 885
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonS
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1264
+        width: 556
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EmptyCounter
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1243
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FilledCounter
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1244
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonNumber
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1035
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonClear
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1032
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonPauseClicked
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1089
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonPause
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1089
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: InGameCounter
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1087
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cross
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 954
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tick
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 952
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pencil
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 944
+        width: 28
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonBoardClicked
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 942
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonBoard
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 942
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonDuster
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 868
+        width: 212
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonMenu
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 731
+        width: 746
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonXS
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 731
+        width: 337
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: InGameHeader
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 436
+        width: 1548
+        height: 281
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 417
+        width: 1108
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PinBoard
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 1336
+        height: 372
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 406
+        width: 1105
+        height: 3
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
