@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 2c6d1417a8a41f14aa39540f9bb1980b
+timeCreated: 1449915270
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Title
+    21300002: big_button
+    21300004: big_button_pressed
+    21300006: Empty_Circle
+    21300008: Filled_Circle
+    21300010: Pencil
+    21300012: Tick
+    21300014: Cross
+    21300016: FTUE_dialogue
+    21300018: progress_background
+    21300020: whiteboard_topbar
+    21300022: header_gameplay
+    21300024: narrow_button
+    21300026: narrow_button_pressed
+    21300028: small_button_pressed
+    21300030: small_button
+    21300032: Black_Line
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Title
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1647
+        width: 1290
+        height: 401
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: big_button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1436
+        width: 878
+        height: 184
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 4, y: 0, z: 0, w: 0}
+    - name: big_button_pressed
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1246
+        width: 874
+        height: 181
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Empty_Circle
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1246
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Filled_Circle
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1243
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pencil
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1515
+        width: 26
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tick
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1525
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cross
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1528
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FTUE_dialogue
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 1380
+        height: 371
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: progress_background
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 481
+        width: 1381
+        height: 375
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: whiteboard_topbar
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 394
+        width: 1553
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: header_gameplay
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 111
+        width: 1545
+        height: 274
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: narrow_button
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1872
+        width: 713
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: narrow_button_pressed
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1721
+        width: 711
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_button_pressed
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1594
+        width: 258
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_button
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1595
+        width: 258
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Line
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 68
+        width: 1109
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

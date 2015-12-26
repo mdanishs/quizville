@@ -1,0 +1,107 @@
+[
+  {
+    "LevelNumber" : 1,
+    "NoQuestions" : 5,
+    "NoMistakes" : 3,
+    "Time" : 1.0,
+    "Difficulty" : 0
+  },
+  {
+    "LevelNumber" : 2,
+    "NoQuestions" : 10,
+    "NoMistakes" : 5,
+    "Time" : 1.5,
+    "Difficulty" : 0
+  },
+  {
+    "LevelNumber" : 3,
+    "NoQuestions" : 7,
+    "NoMistakes" : 2,
+    "Time" : 1.0,
+    "Difficulty" : 0
+  },
+  {
+    "LevelNumber" : 4,
+    "NoQuestions" : 15,
+    "NoMistakes" : 5,
+    "Time" : 2.5,
+    "Difficulty" : 0
+  },
+  {
+    "LevelNumber" : 5,
+    "NoQuestions" : 15,
+    "NoMistakes" : 1,
+    "Time" : 3.0,
+    "Difficulty" : 0
+  },
+  {
+    "LevelNumber" : 6,
+    "NoQuestions" : 5,
+    "NoMistakes" : 3,
+    "Time" : 1.0,
+    "Difficulty" : 1
+  },
+  {
+    "LevelNumber" : 7,
+    "NoQuestions" : 10,
+    "NoMistakes" : 5,
+    "Time" : 1.5,
+    "Difficulty" : 1
+  },
+  {
+    "LevelNumber" : 8,
+    "NoQuestions" : 7,
+    "NoMistakes" : 2,
+    "Time" : 1.0,
+    "Difficulty" : 1
+  },
+  {
+    "LevelNumber" : 9,
+    "NoQuestions" : 15,
+    "NoMistakes" : 5,
+    "Time" : 2.5,
+    "Difficulty" : 1
+  },
+  {
+    "LevelNumber" : 10,
+    "NoQuestions" : 15,
+    "NoMistakes" : 1,
+    "Time" : 3.0,
+    "Difficulty" : 1
+  },
+  {
+    "LevelNumber" : 11,
+    "NoQuestions" : 5,
+    "NoMistakes" : 3,
+    "Time" : 1.0,
+    "Difficulty" : 0
+  },
+  {
+    "LevelNumber" : 12,
+    "NoQuestions" : 10,
+    "NoMistakes" : 5,
+    "Time" : 1.5,
+    "Difficulty" : 2
+  },
+  {
+    "LevelNumber" : 13,
+    "NoQuestions" : 7,
+    "NoMistakes" : 2,
+    "Time" : 1.0,
+    "Difficulty" : 2
+  },
+  {
+    "LevelNumber" : 14,
+    "NoQuestions" : 15,
+    "NoMistakes" : 5,
+    "Time" : 2.5,
+    "Difficulty" : 2
+  },
+  {
+    "LevelNumber" : 15,
+    "NoQuestions" : 15,
+    "NoMistakes" : 1,
+    "Time" : 3.0,
+    "Difficulty" : 2
+  },
+]
