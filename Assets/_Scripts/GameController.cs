@@ -8,16 +8,7 @@ public class GameController {
 
     private static GameController _instance;
 
-    public LevelConfig LevelToPlay
-    {
-        get
-        {
-            int levelNumber = PlayerPrefs.GetInt(GameConstants.CURRNET_LEVEL_KEY);
-            if (levelNumber == 0)
-                levelNumber = 1;
-            return LevelDataProvider.Instance.GetLevel(levelNumber);
-        }
-    }
+    public Chapter ChapterToPlay { get; set; }
 
     public bool IsFTUE
     {
@@ -61,11 +52,11 @@ public class GameController {
 
     public void IncrementGameLevel()
     {
-        if(LevelToPlay.LevelNumber < LevelDataProvider.Instance.TotalLevels)
-        {
-            PlayerPrefs.SetInt(GameConstants.CURRNET_LEVEL_KEY, LevelToPlay.LevelNumber + 1);
-            PlayerPrefs.Save();
-        }
+        //if(LevelToPlay.LevelNumber < ChapterDataProvider.Instance.TotalLevels)
+        //{
+        //    PlayerPrefs.SetInt(GameConstants.CURRNET_LEVEL_KEY, LevelToPlay.LevelNumber + 1);
+        //    PlayerPrefs.Save();
+        //}
     }
 
 }

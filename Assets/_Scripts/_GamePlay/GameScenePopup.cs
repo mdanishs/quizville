@@ -11,6 +11,7 @@ public class GameScenePopup : BasePopupController {
 
     void Start()
     {
+        
         GetComponent<CanvasGroup>().alpha = 0;
         QuitButton.SetActive(false);
 
@@ -18,15 +19,16 @@ public class GameScenePopup : BasePopupController {
         Overlay.GetComponent<RectTransform>().sizeDelta = new Vector2(canvasTransform.rect.width, canvasTransform.rect.height*1.25f);
 
         Overlay.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+        
     }
 
-    public void ShowPopupForLevelStart()
+    public void ShowPopupForLevelStart(string description)
     {
         ContinueButton.SetActive(true);
         YesButton.SetActive(false);
         NoButton.SetActive(false);
         Heading.text = "OBJECTIVE";
-        Description.text = GameController.Instance.LevelToPlay.Objective;
+        Description.text = description;
         ShowPopup();
     }
 

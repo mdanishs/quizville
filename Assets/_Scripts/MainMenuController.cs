@@ -13,24 +13,15 @@ public class MainMenuController : MonoBehaviour {
 
     void Start()
     {
-        if (GameController.Instance.IsFTUE)
-        {
-            FTUEBox.SetActive(true);
-        }
-        else
-        {
-            ProgressBox.SetActive(true);
-            ProgressBar.value = GameController.Instance.LevelToPlay.LevelNumber;
-        }
-
+        
         SetSoundButtonText();
 
         AudioManager.Instance.AdjustBackgroundVolume(1f);
     }
 
-    public void OnPlayButtonClicked()
+    public void OnPlayClicked()
     {
-        GameController.Instance.LoadScene(GameConstants.GAME_PLAY_SCENE);
+        GameController.Instance.LoadScene(GameConstants.LEVEL_SELECT_SCENE);
         AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
     }
 
@@ -41,6 +32,17 @@ public class MainMenuController : MonoBehaviour {
         AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
     }
 
+    public void OnInfoClicked()
+    {
+        StartCoroutine(ShowInfoPopup());
+        AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
+    }
+
+    public void OnQuitGameClicked()
+    {
+        Application.Quit();
+    }
+
     void SetSoundButtonText()
     {
         if (AudioManager.Instance.IsMute)
@@ -48,13 +50,7 @@ public class MainMenuController : MonoBehaviour {
         else
             TxtSoundButton.text = "SOUNDS | ON";
     }
-
-    public void OnInfoClicked()
-    {
-        StartCoroutine(ShowInfoPopup());
-        AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
-    }
-
+    
     IEnumerator ShowInfoPopup()
     {
         InfoPopup.gameObject.SetActive(true);

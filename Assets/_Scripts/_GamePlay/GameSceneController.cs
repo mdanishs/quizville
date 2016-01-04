@@ -17,7 +17,8 @@ public class GameSceneController : MonoBehaviour {
    void Start () {
 
         _popupController = Popup.GetComponent<GameScenePopup>();
-        StartCoroutine(ShowLevelObjective());
+        LevelData level = ChapterDataProvider.GetLevelToPlayForChapter(GameController.Instance.ChapterToPlay);
+        StartCoroutine(ShowLevelObjective(level.Objective));
 	}
 
     private void OnLevelComplete(bool clearedLevel)
@@ -39,11 +40,11 @@ public class GameSceneController : MonoBehaviour {
         }
     }
 
-    IEnumerator ShowLevelObjective()
+    IEnumerator ShowLevelObjective(string objective)
     {
         Popup.SetActive(true);
         yield return new WaitForEndOfFrame();
-        _popupController.ShowPopupForLevelStart();
+        _popupController.ShowPopupForLevelStart(objective);
     }
 
     void OnDestroy()

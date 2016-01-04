@@ -586,11 +586,11 @@ namespace SimpleJSON
         public void SaveToFile(string aFileName)
         {
 #if USE_FileIO
-            System.IO.Directory.CreateDirectory((new System.IO.FileInfo(aFileName)).Directory.FullName);
-            using (var F = System.IO.File.OpenWrite(aFileName))
-            {
-                SaveToStream(F);
-            }
+            //System.IO.Directory.CreateDirectory((new System.IO.FileInfo(aFileName)).Directory.FullName);
+            //using (var F = System.IO.File.OpenWrite(aFileName))
+            //{
+            //    SaveToStream(F);
+            //}
 #else
 			throw new Exception ("Can't use File IO stuff in webplayer");
 #endif

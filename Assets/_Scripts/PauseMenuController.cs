@@ -26,7 +26,7 @@ public class PauseMenuController : MonoBehaviour {
 
     public void OnQuitGameClicked()
     {
-        GameController.Instance.LoadScene(GameConstants.MENU_SCENE);
+        GameController.Instance.LoadScene(GameConstants.LEVEL_SELECT_SCENE);
     }
     
 }

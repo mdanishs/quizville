@@ -14,10 +14,11 @@ public class QuestionsScreenController : MonoBehaviour {
     public static event System.Action<bool> LevelCompleted;
     public NumpadController Numpad;
     public GameObject PauseMenu;
+    public GameObject Board;
 
     int _currentQuestionIndex;
     List<Question> _questionsList;
-    LevelConfig _levelConfig;
+    LevelData _levelConfig;
 
     int _correctCounter, _mistakeCounter;
     Coroutine _timerCoroutine;
@@ -27,7 +28,7 @@ public class QuestionsScreenController : MonoBehaviour {
         GameScenePopup.ContinueClicked += OnPopupContinueClicked;
         GameController.Instance.IsGamePaused = true;
 
-        _levelConfig = GameController.Instance.LevelToPlay;
+        _levelConfig = ChapterDataProvider.GetLevelToPlayForChapter(GameController.Instance.ChapterToPlay);
         LevelNumber.text = "Level " + _levelConfig.LevelNumber.ToString();
 
         _correctCounter = 0;
@@ -149,7 +150,8 @@ public class QuestionsScreenController : MonoBehaviour {
 
     public void OnBoardClicked()
     {
-
+        Board.SetActive(true);
+        StartCoroutine(Board.GetComponent<WhiteBoardController>().ShowBoard());
     }
 
     void OnDestroy()

@@ -1,33 +1,36 @@
 fileFormatVersion: 2
-guid: c8d5991241faae04b91cdf15ee15db15
-timeCreated: 1451162511
+guid: bcdcbb0523604b845ba8f15d34b73f7b
+timeCreated: 1451815048
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Title
-    21300002: Popup
-    21300004: ButtonL
-    21300006: ButtonM
-    21300008: ButtonS
-    21300010: EmptyCounter
-    21300012: FilledCounter
-    21300014: ButtonNumber
-    21300016: ButtonClear
-    21300018: ButtonPauseClicked
-    21300020: ButtonPause
-    21300022: InGameCounter
-    21300024: Cross
-    21300026: Tick
-    21300028: Pencil
-    21300030: ButtonBoardClicked
-    21300032: ButtonBoard
-    21300034: ButtonDuster
-    21300036: ButtonMenu
-    21300038: ButtonXS
-    21300040: InGameHeader
-    21300042: SpriteSheet_21
-    21300044: PinBoard
-    21300046: SpriteSheet_23
+    21300000: SpriteSheet 1_0
+    21300002: SpriteSheet 1_1
+    21300004: SpriteSheet 1_2
+    21300006: SpriteSheet 1_3
+    21300008: SpriteSheet 1_4
+    21300010: SpriteSheet 1_5
+    21300012: SpriteSheet 1_6
+    21300014: SpriteSheet 1_7
+    21300016: SpriteSheet 1_8
+    21300018: SpriteSheet 1_9
+    21300020: SpriteSheet 1_10
+    21300022: SpriteSheet 1_11
+    21300024: SpriteSheet 1_12
+    21300026: SpriteSheet 1_13
+    21300028: SpriteSheet 1_14
+    21300030: SpriteSheet 1_15
+    21300032: SpriteSheet 1_16
+    21300034: SpriteSheet 1_17
+    21300036: SpriteSheet 1_18
+    21300038: SpriteSheet 1_19
+    21300040: SpriteSheet 1_20
+    21300042: SpriteSheet 1_21
+    21300044: SpriteSheet 1_22
+    21300046: SpriteSheet 1_23
+    21300048: SpriteSheet 1_24
+    21300050: SpriteSheet 1_25
+    21300052: SpriteSheet 1_26
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -74,243 +77,273 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Title
+    - name: SpriteSheet 1_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1811
-        width: 1048
-        height: 233
+        x: 30
+        y: 1826
+        width: 213
+        height: 216
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Popup
+    - name: SpriteSheet 1_1
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 1040
-        width: 972
-        height: 1002
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonL
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1590
-        width: 1045
-        height: 219
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonM
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1390
-        width: 885
-        height: 190
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonS
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1264
-        width: 556
-        height: 124
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: EmptyCounter
-      rect:
-        serializedVersion: 2
-        x: 566
-        y: 1243
-        width: 143
-        height: 143
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FilledCounter
-      rect:
-        serializedVersion: 2
-        x: 712
-        y: 1244
-        width: 143
-        height: 143
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonNumber
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1035
+        x: 467
+        y: 1816
         width: 226
         height: 226
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonClear
+    - name: SpriteSheet 1_2
       rect:
         serializedVersion: 2
-        x: 233
-        y: 1032
-        width: 227
-        height: 229
+        x: 704
+        y: 1816
+        width: 228
+        height: 228
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonPauseClicked
+    - name: SpriteSheet 1_3
       rect:
         serializedVersion: 2
-        x: 466
-        y: 1089
-        width: 142
-        height: 142
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonPause
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 1089
-        width: 142
-        height: 142
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: InGameCounter
-      rect:
-        serializedVersion: 2
-        x: 756
-        y: 1087
-        width: 142
-        height: 142
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Cross
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 954
-        width: 52
+        x: 980
+        y: 1929
+        width: 51
         height: 67
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Tick
+    - name: SpriteSheet 1_4
       rect:
         serializedVersion: 2
-        x: 86
-        y: 952
+        x: 1092
+        y: 1880
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 707
+        width: 158
+        height: 1316
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 794
+        width: 90
+        height: 1232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 489
+        width: 274
+        height: 1553
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1673
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1674
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1811
         width: 73
-        height: 71
+        height: 73
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Pencil
+    - name: SpriteSheet 1_11
       rect:
         serializedVersion: 2
-        x: 176
-        y: 944
-        width: 28
-        height: 85
+        x: 1092
+        y: 1693
+        width: 160
+        height: 156
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonBoardClicked
+    - name: SpriteSheet 1_12
       rect:
         serializedVersion: 2
-        x: 466
-        y: 942
+        x: 341
+        y: 1669
         width: 142
         height: 142
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonBoard
+    - name: SpriteSheet 1_13
       rect:
         serializedVersion: 2
-        x: 612
-        y: 942
+        x: 487
+        y: 1669
         width: 142
         height: 142
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonDuster
+    - name: SpriteSheet 1_14
       rect:
         serializedVersion: 2
-        x: 764
-        y: 868
-        width: 212
-        height: 216
+        x: 635
+        y: 1669
+        width: 142
+        height: 142
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonMenu
+    - name: SpriteSheet 1_15
       rect:
         serializedVersion: 2
-        x: 7
-        y: 731
-        width: 746
-        height: 206
+        x: 783
+        y: 1669
+        width: 142
+        height: 142
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonXS
+    - name: SpriteSheet 1_16
       rect:
         serializedVersion: 2
-        x: 757
-        y: 731
+        x: 996
+        y: 1694
+        width: 26
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1522
+        width: 144
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1536
+        width: 555
+        height: 125
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1535
         width: 337
         height: 124
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: InGameHeader
+    - name: SpriteSheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1296
+        width: 746
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1296
+        width: 212
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 268
+        width: 981
+        height: 1003
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_23
       rect:
         serializedVersion: 2
         x: 15
-        y: 436
-        width: 1548
-        height: 281
+        y: 71
+        width: 847
+        height: 184
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpriteSheet_21
+    - name: SpriteSheet 1_24
       rect:
         serializedVersion: 2
-        x: 24
-        y: 417
-        width: 1108
-        height: 7
+        x: 870
+        y: 71
+        width: 847
+        height: 184
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PinBoard
+    - name: SpriteSheet 1_25
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 1336
-        height: 372
+        x: 243
+        y: 1829
+        width: 209
+        height: 213
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpriteSheet_23
+    - name: SpriteSheet 1_26
       rect:
         serializedVersion: 2
-        x: 27
-        y: 406
-        width: 1105
-        height: 3
+        x: 1099
+        y: 1531
+        width: 141
+        height: 142
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
