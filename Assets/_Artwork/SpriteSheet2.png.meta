@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ed05f2751f52a4149aa14ef8beed6796
-timeCreated: 1451679448
+timeCreated: 1452717264
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,10 +65,10 @@ TextureImporter:
     - name: SpriteSheet2_1
       rect:
         serializedVersion: 2
-        x: 1252
-        y: 143
-        width: 779
-        height: 527
+        x: 969
+        y: 75
+        width: 1004
+        height: 610
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

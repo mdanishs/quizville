@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c25f1655e28a736419e839853c1aab02
-timeCreated: 1451507720
+timeCreated: 1452432684
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -54,9 +54,9 @@ TextureImporter:
     - name: LevelSelect_0
       rect:
         serializedVersion: 2
-        x: 266
+        x: 262
         y: 0
-        width: 1519
+        width: 1536
         height: 2048
       alignment: 0
       pivot: {x: .5, y: .5}

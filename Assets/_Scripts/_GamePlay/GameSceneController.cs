@@ -17,20 +17,30 @@ public class GameSceneController : MonoBehaviour {
    void Start () {
 
         _popupController = Popup.GetComponent<GameScenePopup>();
-        LevelData level = ChapterDataProvider.GetLevelToPlayForChapter(GameController.Instance.ChapterToPlay);
+        LevelData level = GameController.Instance.LevelToPlay;
         StartCoroutine(ShowLevelObjective(level.Objective));
 	}
 
-    private void OnLevelComplete(bool clearedLevel)
+    private void OnLevelComplete(bool clearedLevel, int stars)
     {
         GameController.Instance.IsGamePaused = false;
         if (clearedLevel)
         {
             Popup.SetActive(true);
             AudioManager.Instance.PlaySound(AudioManager.SFX.LEVEL_CLEARED);
-            _popupController.ShowPopupForLevelComplete();
-            GameController.Instance.IncrementGameLevel();
-            
+            _popupController.ShowPopupForLevelComplete(stars);
+
+            //increment level
+            LevelData currentLevel = GameController.Instance.LevelToPlay;
+            currentLevel.NumberOfStarsEarned = stars;
+            Chapter currentChapter = GameController.Instance.ChapterToPlay;
+
+            if (currentLevel.LevelNumber < currentChapter.Levels.Count)
+            {
+                LevelData levelData = currentChapter.Levels[currentLevel.LevelNumber];
+                levelData.LevelState = LevelData.LEVEL_STATE.UNLOCKED;
+                GameController.Instance.LevelToPlay = levelData;
+            }
         }
         else
         {

@@ -2,14 +2,12 @@
 
 public class LevelData {
 
-    private int LevelID
+    public enum LEVEL_STATE
     {
-        get
-        {
-            return int.Parse((ChapterNumber + "" + LevelNumber));
-        }
+        LOCKED=0,
+        UNLOCKED
     }
-
+    
     public int ChapterNumber;
     public int LevelNumber;
     public int NumberOfQuestions;
@@ -18,19 +16,28 @@ public class LevelData {
     public Question.QUESTION_LEVEL DifficultyLevel;
     public string Objective { get { return CreateLevelObjectiveString(); } }
 
-    public int ScoreEarned
+    private string LevelID
     {
         get
         {
-            string key = GameConstants.LEVEL_SCORE_KEY + LevelID;
-            if (PlayerPrefs.HasKey(key))
-                return PlayerPrefs.GetInt(key);
-            return -1;
+            return (ChapterNumber + "" + LevelNumber);
         }
+    }
+
+    public LEVEL_STATE LevelState
+    {
+        get
+        {
+            string key = GameConstants.LEVEL_STATE_KEY + LevelID;
+            if (PlayerPrefs.HasKey(key))
+                return (LEVEL_STATE)PlayerPrefs.GetInt(key);
+            return LEVEL_STATE.LOCKED;
+        }
+
         set
         {
-            if (value >= 0)
-                PlayerPrefs.SetInt(GameConstants.LEVEL_SCORE_KEY + LevelID, value);
+            PlayerPrefs.SetInt(GameConstants.LEVEL_STATE_KEY + LevelID, (int)value);
+            PlayerPrefs.Save();
         }
     }
 
@@ -39,6 +46,7 @@ public class LevelData {
         get
         {
             string key = GameConstants.LEVEL_STAR_KEY + LevelID;
+            Debug.Log(key);
             if (PlayerPrefs.HasKey(key))
                 return PlayerPrefs.GetInt(key);
             return -1;
@@ -46,7 +54,10 @@ public class LevelData {
         set
         {
             if (value >= 0)
+            {
                 PlayerPrefs.SetInt(GameConstants.LEVEL_STAR_KEY + LevelID, value);
+                PlayerPrefs.Save();
+            }
         }
     }
 
@@ -59,6 +70,10 @@ public class LevelData {
         NumberOfMistakes = numberOfMistakes;
         TimeLimit = timeLimit;
         DifficultyLevel = difficulty;
+
+        //special case for level 1
+        if (levelNumber == 1 && LevelState == LEVEL_STATE.LOCKED)
+            LevelState = LEVEL_STATE.UNLOCKED;
 
     }
 

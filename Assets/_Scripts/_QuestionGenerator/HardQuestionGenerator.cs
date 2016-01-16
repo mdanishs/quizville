@@ -13,8 +13,8 @@ public class HardQuestionGenerator : IQuestionGenerator {
         int questionsCount = 0;
         while (questionsCount != numberOfQuestions)
         {
-            int number1 = Random.Range(10, 1000);
-            int number2 = Random.Range(-100, 100);
+            int number1 = Random.Range(10, 100);
+            int number2 = Random.Range(-10, 100);
             char operation = operations[Random.Range(0, operations.Length - 1)];
 
             string strQuestion = "Solve " + number1 + " " + operation + " " + number2 + ".";

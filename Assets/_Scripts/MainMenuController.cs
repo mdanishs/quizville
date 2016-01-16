@@ -15,13 +15,11 @@ public class MainMenuController : MonoBehaviour {
     {
         
         SetSoundButtonText();
-
-        AudioManager.Instance.AdjustBackgroundVolume(1f);
     }
 
     public void OnPlayClicked()
     {
-        GameController.Instance.LoadScene(GameConstants.LEVEL_SELECT_SCENE);
+        GameController.Instance.LoadScene(GameConstants.CHAPTER_SELECT_SCENE);
         AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
     }
 

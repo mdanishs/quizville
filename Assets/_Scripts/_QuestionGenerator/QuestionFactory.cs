@@ -27,9 +27,9 @@ public class QuestionFactory {
             case Question.QUESTION_LEVEL.BASIC:
                 return new BasicQuestionGenerator();
             case Question.QUESTION_LEVEL.MEDIUM:
-                break;
+                return new MediumQuestionGenerator();
             case Question.QUESTION_LEVEL.HARD:
-                break;
+                return new HardQuestionGenerator();
             default:
                 break;
         }

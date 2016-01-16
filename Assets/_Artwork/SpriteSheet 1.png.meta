@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bcdcbb0523604b845ba8f15d34b73f7b
-timeCreated: 1451815048
+timeCreated: 1452932878
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -31,6 +31,11 @@ TextureImporter:
     21300048: SpriteSheet 1_24
     21300050: SpriteSheet 1_25
     21300052: SpriteSheet 1_26
+    21300054: SpriteSheet 1_27
+    21300056: SpriteSheet 1_28
+    21300058: SpriteSheet 1_29
+    21300060: SpriteSheet 1_30
+    21300062: SpriteSheet 1_31
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -124,36 +129,6 @@ TextureImporter:
         y: 1880
         width: 154
         height: 146
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpriteSheet 1_5
-      rect:
-        serializedVersion: 2
-        x: 1457
-        y: 707
-        width: 158
-        height: 1316
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpriteSheet 1_6
-      rect:
-        serializedVersion: 2
-        x: 1644
-        y: 794
-        width: 90
-        height: 1232
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SpriteSheet 1_7
-      rect:
-        serializedVersion: 2
-        x: 1766
-        y: 489
-        width: 274
-        height: 1553
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +285,20 @@ TextureImporter:
     - name: SpriteSheet 1_23
       rect:
         serializedVersion: 2
-        x: 15
-        y: 71
-        width: 847
-        height: 184
+        x: 26
+        y: 48
+        width: 903
+        height: 213
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet 1_24
       rect:
         serializedVersion: 2
-        x: 870
-        y: 71
-        width: 847
-        height: 184
+        x: 944
+        y: 48
+        width: 906
+        height: 213
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +315,50 @@ TextureImporter:
     - name: SpriteSheet 1_26
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 1531
-        width: 141
-        height: 142
+        x: 1091
+        y: 1452
+        width: 201
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1308
+        width: 107
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1356
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1809
+        width: 212
+        height: 213
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1638
+        width: 77
+        height: 133
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

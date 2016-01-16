@@ -12,7 +12,9 @@ public class AudioManager : MonoBehaviour {
         CORRECT_ANSWER,
         WRONG_ANSWER,
         LEVEL_FAILED,
-        LEVEL_CLEARED
+        LEVEL_CLEARED,
+        STAR,
+        TICK
     }
     
     public static AudioManager Instance;
@@ -58,12 +60,6 @@ public class AudioManager : MonoBehaviour {
             _backgroundMusic.Stop();
     }
 
-    /// <summary>
-    /// takes the amount of level to be decreased or increased
-    /// giving a positive value will increase the level
-    /// and giving the negative value will decrease the level
-    /// </summary>
-    /// <param name="amount"></param>
     public void AdjustBackgroundVolume(float amount)
     {
         if (_backgroundVolumeCoroutine != null)
@@ -75,11 +71,21 @@ public class AudioManager : MonoBehaviour {
     {
         if (source != null)
         {
-            float increment = amount / 10;
-            for (int i = 0; i < 10; i++)
+            if(amount > 0)
             {
-                source.volume += increment;
-                yield return new WaitForSeconds(0.25f);
+                while(source.volume < amount)
+                {
+                    source.volume += 0.05f;
+                    yield return new WaitForSeconds(0.5f);
+                }
+            }
+            else if (amount < 0)
+            {
+                while (source.volume > Mathf.Abs( amount))
+                {
+                    source.volume -= 0.05f;
+                    yield return new WaitForSeconds(0.1f);
+                }
             }
         }
     }
@@ -109,7 +115,12 @@ public class AudioManager : MonoBehaviour {
                 return _audioSources[4];
             case SFX.LEVEL_FAILED:
                 return _audioSources[5];
+            case SFX.STAR:
+                return _audioSources[6];
+            case SFX.TICK:
+                return _audioSources[7];
         }
+
 
         return null;
     }

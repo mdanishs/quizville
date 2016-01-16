@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using SimpleJSON;
+using System.Linq;
 
 public class ChapterDataProvider : IDataProvider<Chapter> {
 
@@ -27,6 +28,7 @@ public class ChapterDataProvider : IDataProvider<Chapter> {
         {
             Chapter newChapter = new Chapter();
             newChapter.ChapterName = chapter["ChapterName"];
+            newChapter.ChapterNumber = chapter["ChapterNumber"].AsInt;
             
             List<LevelData> levels = new List<LevelData>();
 
@@ -68,6 +70,6 @@ public class ChapterDataProvider : IDataProvider<Chapter> {
     public static LevelData GetLevelToPlayForChapter(Chapter chapter)
     {
         Chapter currentChapter = chapter;
-        return (currentChapter.LastClearedLevel == -1) ? currentChapter.Levels[0] : currentChapter.Levels[currentChapter.LastClearedLevel];
+        return chapter.Levels.Where( level => level.LevelState == LevelData.LEVEL_STATE.LOCKED).FirstOrDefault();
     }
 }

@@ -11,15 +11,18 @@ public class QuestionsScreenController : MonoBehaviour {
     public Text Time;
     public Text AnswerBox;
     public TallyMarksWidgetController TallyMarksWidget;
-    public static event System.Action<bool> LevelCompleted;
     public NumpadController Numpad;
     public GameObject PauseMenu;
     public GameObject Board;
+
+    public delegate void LevelComplete(bool cleared, int stars);
+    public static event LevelComplete LevelCompleted;
 
     int _currentQuestionIndex;
     List<Question> _questionsList;
     LevelData _levelConfig;
 
+    int _elapsedTime;
     int _correctCounter, _mistakeCounter;
     Coroutine _timerCoroutine;
 	
@@ -28,7 +31,7 @@ public class QuestionsScreenController : MonoBehaviour {
         GameScenePopup.ContinueClicked += OnPopupContinueClicked;
         GameController.Instance.IsGamePaused = true;
 
-        _levelConfig = ChapterDataProvider.GetLevelToPlayForChapter(GameController.Instance.ChapterToPlay);
+        _levelConfig = GameController.Instance.LevelToPlay;
         LevelNumber.text = "Level " + _levelConfig.LevelNumber.ToString();
 
         _correctCounter = 0;
@@ -39,7 +42,6 @@ public class QuestionsScreenController : MonoBehaviour {
         _questionsList = questionGenerator.GenerateQuestions(_levelConfig.NumberOfQuestions);
 
         StartCoroutine(RefreshForNextQuestion());
-        AudioManager.Instance.AdjustBackgroundVolume(-0.995f);
         
     }
     
@@ -52,18 +54,19 @@ public class QuestionsScreenController : MonoBehaviour {
     {
         
         int seconds = 0;
-        int totalTime = (int)_levelConfig.TimeLimit * 60; // Minutes into seconds
+        int totalTime = (int)(_levelConfig.TimeLimit * 60); // Minutes into seconds
 
         while(seconds < totalTime)
         {
             yield return new WaitForSeconds(1f);
             if(!GameController.Instance.IsGamePaused)
                 seconds++;
+            _elapsedTime = seconds;
             Time.text = (totalTime - seconds).ToString() + " Secs";
         }
 
         if (LevelCompleted != null)
-            LevelCompleted(false);
+            LevelCompleted(false,0);
     }
 
     public IEnumerator RefreshForNextQuestion()
@@ -87,7 +90,6 @@ public class QuestionsScreenController : MonoBehaviour {
         Numpad.ClearText();
         AudioManager.Instance.PlaySound(AudioManager.SFX.CLICK);
         Question question = _questionsList[_currentQuestionIndex];
-        print(_currentQuestionIndex);
         if(AnswerBox.text == question.Answer) //if answer is correct
         {
             _correctCounter++;
@@ -102,7 +104,7 @@ public class QuestionsScreenController : MonoBehaviour {
             {
                 if (LevelCompleted != null)
                 {
-                    LevelCompleted(false);
+                    LevelCompleted(false,0);
                     if (_timerCoroutine != null)
                         StopCoroutine(_timerCoroutine);
                     return;
@@ -115,13 +117,24 @@ public class QuestionsScreenController : MonoBehaviour {
             
             if (LevelCompleted != null)
             {
-                LevelCompleted(true);
+                LevelCompleted(true,GetCalculateStars());
                 if (_timerCoroutine != null)
                     StopCoroutine(_timerCoroutine);
             }
         }
         else //if questions are remaining
             StartCoroutine( RefreshForNextQuestion());
+    }
+
+    int GetCalculateStars()
+    {
+        float time = _elapsedTime / (_levelConfig.TimeLimit * 60);
+        if (time <= 0.4)
+            return 3;
+        else if (time <= 0.75)
+            return 2;
+
+        return 1;
     }
 
     void OnPopupContinueClicked()

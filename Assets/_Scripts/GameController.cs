@@ -9,6 +9,7 @@ public class GameController {
     private static GameController _instance;
 
     public Chapter ChapterToPlay { get; set; }
+    public LevelData LevelToPlay { get; set; }
 
     public bool IsFTUE
     {
@@ -37,7 +38,7 @@ public class GameController {
 
     public static GameController Instance
     {
-        get
+        get 
         {
             if (_instance == null)
                 _instance = new GameController();
@@ -47,16 +48,13 @@ public class GameController {
 
     public void LoadScene(string scene)
     {
+
+        if (scene == GameConstants.GAME_PLAY_SCENE)
+            AudioManager.Instance.AdjustBackgroundVolume(-0.1f);
+        else
+            AudioManager.Instance.AdjustBackgroundVolume(0.9f);
+
         Application.LoadLevel(scene);
     }
-
-    public void IncrementGameLevel()
-    {
-        //if(LevelToPlay.LevelNumber < ChapterDataProvider.Instance.TotalLevels)
-        //{
-        //    PlayerPrefs.SetInt(GameConstants.CURRNET_LEVEL_KEY, LevelToPlay.LevelNumber + 1);
-        //    PlayerPrefs.Save();
-        //}
-    }
-
+    
 }

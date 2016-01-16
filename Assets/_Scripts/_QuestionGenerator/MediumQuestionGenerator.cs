@@ -5,7 +5,7 @@ using System.Linq;
 public class MediumQuestionGenerator : IQuestionGenerator
 {
 
-    char[] operations = new char[] { '+', '-', 'x', '/' };
+    char[] operations = new char[] { '+', '-'};
 
     public List<Question> GenerateQuestions(int numberOfQuestions)
     {
@@ -14,8 +14,8 @@ public class MediumQuestionGenerator : IQuestionGenerator
         int questionsCount = 0;
         while (questionsCount != numberOfQuestions)
         {
-            int number1 = Random.Range(10, 99);
-            int number2 = Random.Range(10, 99);
+            int number1 = Random.Range(10, 1000);
+            int number2 = Random.Range(-10, 1000);
             char operation = operations[Random.Range(0, operations.Length - 1)];
 
             string strQuestion = "Solve " + number1 + " " + operation + " " + number2 + ".";

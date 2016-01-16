@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Chapter  {
 
@@ -7,14 +8,24 @@ public class Chapter  {
     public string ChapterName { get; set; }
     public List<LevelData> Levels = null;
 
-    public int LastClearedLevel
+    public int ClearedLevels
     {
         get
         {
-            if (PlayerPrefs.HasKey(GameConstants.LAST_CLEARED_LEVEL + ChapterNumber))
-                return PlayerPrefs.GetInt(GameConstants.LAST_CLEARED_LEVEL + ChapterNumber);
-            else
-                return -1;
+            return Levels.Where(level => level.LevelState == LevelData.LEVEL_STATE.UNLOCKED).DefaultIfEmpty().Count()-1;
+        }
+    }
+
+    public int TotalStarsEarned
+    {
+        get
+        {
+            int sum = 0;
+            foreach (LevelData data in Levels)
+            {
+                sum += (data.NumberOfStarsEarned == -1 ) ? 0  : data.NumberOfStarsEarned;
+            }
+            return sum;
         }
     }
 

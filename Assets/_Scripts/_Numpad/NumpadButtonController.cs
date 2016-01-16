@@ -25,6 +25,7 @@ public class NumpadButtonController : MonoBehaviour {
     {
         if (KeyPressed != null)
             KeyPressed(this);
+        AudioManager.Instance.PlaySound(AudioManager.SFX.TICK);
     }
 }
 

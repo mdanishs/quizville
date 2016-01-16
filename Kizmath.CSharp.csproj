@@ -87,7 +87,8 @@
     <Compile Include="Assets\_Scripts\_GamePlay\TallyMarkController.cs" />
     <Compile Include="Assets\_Scripts\_GamePlay\TallyMarksWidgetController.cs" />
     <Compile Include="Assets\_Scripts\_LevelSelect\ChapterIconController.cs" />
-    <Compile Include="Assets\_Scripts\_LevelSelect\LevelListItemController.cs" />
+    <Compile Include="Assets\_Scripts\_LevelSelect\ChapterSelectController.cs" />
+    <Compile Include="Assets\_Scripts\_LevelSelect\LevelIconController.cs" />
     <Compile Include="Assets\_Scripts\_LevelSelect\LevelSelectController.cs" />
     <Compile Include="Assets\_Scripts\_Numpad\NumpadButtonController.cs" />
     <Compile Include="Assets\_Scripts\_Numpad\NumpadController.cs" />
