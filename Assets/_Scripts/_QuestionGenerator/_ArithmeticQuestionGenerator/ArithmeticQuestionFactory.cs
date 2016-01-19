@@ -1,24 +1,24 @@
 ﻿using System.Collections.Generic;
 
-public class QuestionFactory {
+public class ArithmeticQuestionFactory: IQuestionFactory {
 
-    private static QuestionFactory _instance;
+    //private static ArithmeticQuestionFactory _instance;
 
-    public static QuestionFactory Instance
-    {
-        get
-        {
-            if(_instance == null)
-                _instance = new QuestionFactory();
+    //public static ArithmeticQuestionFactory Instance
+    //{
+    //    get
+    //    {
+    //        if(_instance == null)
+    //            _instance = new ArithmeticQuestionFactory();
 
-            return _instance;
-        }
-    }
+    //        return _instance;
+    //    }
+    //}
 
-    private QuestionFactory()
-    {
+    //private ArithmeticQuestionFactory()
+    //{
         
-    }
+    //}
 
     public IQuestionGenerator GetGenerator(Question.QUESTION_LEVEL level)
     {

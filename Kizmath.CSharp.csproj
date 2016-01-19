@@ -92,12 +92,18 @@
     <Compile Include="Assets\_Scripts\_LevelSelect\LevelSelectController.cs" />
     <Compile Include="Assets\_Scripts\_Numpad\NumpadButtonController.cs" />
     <Compile Include="Assets\_Scripts\_Numpad\NumpadController.cs" />
-    <Compile Include="Assets\_Scripts\_QuestionGenerator\ArithmeticBasicQuestionGenerator.cs" />
-    <Compile Include="Assets\_Scripts\_QuestionGenerator\ArithmeticHardQuestionGenerator.cs" />
-    <Compile Include="Assets\_Scripts\_QuestionGenerator\ArithmeticMediumQuestionGenerator.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\ChapterFactory.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\IQuestionFactory.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\IQuestionGenerator.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\Question.cs" />
-    <Compile Include="Assets\_Scripts\_QuestionGenerator\QuestionFactory.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticBasicQuestionGenerator.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticHardQuestionGenerator.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticMediumQuestionGenerator.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticQuestionFactory.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\BasicBodmasQuestionGenerator.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\BodmasQuestionFactory.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\HardBodmasQuestionGenerator.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\MediumBodmasQuestionGenerator.cs" />
     <Compile Include="Assets\_ThirdPartyAssets\_Scripts\SimpleJSON.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

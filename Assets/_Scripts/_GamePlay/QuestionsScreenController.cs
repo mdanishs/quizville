@@ -38,8 +38,8 @@ public class QuestionsScreenController : MonoBehaviour {
         _mistakeCounter = 0;
         _currentQuestionIndex = 0;
 
-        IQuestionGenerator questionGenerator = QuestionFactory.Instance.GetGenerator(_levelConfig.DifficultyLevel);
-        _questionsList = questionGenerator.GenerateQuestions(_levelConfig.NumberOfQuestions);
+        IQuestionFactory questionGenerator = ChapterFactory.Instance.GetQuestionGeneratorForChapter((GameConstants.CHAPTERS)(GameController.Instance.ChapterToPlay.ChapterNumber));
+        _questionsList = questionGenerator.GetGenerator(_levelConfig.DifficultyLevel).GenerateQuestions(_levelConfig.NumberOfQuestions);
 
         StartCoroutine(RefreshForNextQuestion());
         
