@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 
-public class MediumQuestionGenerator : IQuestionGenerator
-{
+public class ArithmeticBasicQuestionGenerator : IQuestionGenerator {
 
-    char[] operations = new char[] { '+', '-'};
+    char[] operations = new char[] { '+', '-', 'x', '/' };
 
     public List<Question> GenerateQuestions(int numberOfQuestions)
     {
-        List<Question> questions = new List<Question>();
+        List <Question> questions = new List<Question>();
 
         int questionsCount = 0;
-        while (questionsCount != numberOfQuestions)
+        while(questionsCount != numberOfQuestions)
         {
-            int number1 = Random.Range(10, 1000);
-            int number2 = Random.Range(-10, 1000);
+            int number1 = Random.Range(1, 10);
+            int number2 = Random.Range(0, 10);
             char operation = operations[Random.Range(0, operations.Length - 1)];
 
             string strQuestion = "Solve " + number1 + " " + operation + " " + number2 + ".";
@@ -33,7 +32,7 @@ public class MediumQuestionGenerator : IQuestionGenerator
                 questionsCount++;
             }
         }
-
+        
         return questions;
     }
 
@@ -59,4 +58,5 @@ public class MediumQuestionGenerator : IQuestionGenerator
 
         return answer.ToString();
     }
+
 }

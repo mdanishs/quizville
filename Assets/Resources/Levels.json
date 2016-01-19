@@ -12,211 +12,135 @@
             },
             {
                 "LevelNumber": 2,
-                "NoQuestions": 10,
-                "NoMistakes": 5,
-                "Time": 1.5,
+                "NoQuestions": 5,
+                "NoMistakes": 3,
+                "Time": 0.5,
                 "Difficulty": 0
             },
             {
                 "LevelNumber": 3,
-                "NoQuestions": 7,
-                "NoMistakes": 2,
+                "NoQuestions": 10,
+                "NoMistakes": 5,
                 "Time": 1.0,
                 "Difficulty": 0
             },
             {
                 "LevelNumber": 4,
-                "NoQuestions": 15,
+                "NoQuestions": 10,
                 "NoMistakes": 5,
-                "Time": 2.5,
+                "Time": 0.75,
                 "Difficulty": 0
             },
             {
                 "LevelNumber": 5,
-                "NoQuestions": 15,
-                "NoMistakes": 1,
-                "Time": 3.0,
+                "NoQuestions": 10,
+                "NoMistakes": 5,
+                "Time": 0.5,
                 "Difficulty": 0
             },
             {
                 "LevelNumber": 6,
-                "NoQuestions": 5,
-                "NoMistakes": 3,
-                "Time": 1.0,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 7,
                 "NoQuestions": 10,
-                "NoMistakes": 5,
-                "Time": 1.5,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 8,
-                "NoQuestions": 7,
                 "NoMistakes": 2,
-                "Time": 1.0,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 9,
-                "NoQuestions": 15,
-                "NoMistakes": 5,
-                "Time": 2.5,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 10,
-                "NoQuestions": 15,
-                "NoMistakes": 1,
-                "Time": 3.0,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 11,
-                "NoQuestions": 5,
-                "NoMistakes": 3,
                 "Time": 1.0,
                 "Difficulty": 0
             },
             {
-                "LevelNumber": 12,
+                "LevelNumber": 7,
                 "NoQuestions": 10,
+                "NoMistakes": 2,
+                "Time": 0.5,
+                "Difficulty": 0
+            },
+            {
+                "LevelNumber": 8,
+                "NoQuestions": 10,
+                "NoMistakes": 1,
+                "Time": 1.5,
+                "Difficulty": 0
+            },
+            {
+                "LevelNumber": 9,
+                "NoQuestions": 15,
+                "NoMistakes": 7,
+                "Time": 2.0,
+                "Difficulty": 0
+            },
+            {
+                "LevelNumber": 10,
+                "NoQuestions": 15,
                 "NoMistakes": 5,
                 "Time": 1.5,
-                "Difficulty": 2
+                "Difficulty": 0
+            },
+            {
+                "LevelNumber": 11,
+                "NoQuestions": 15,
+                "NoMistakes": 10,
+                "Time": 2.0,
+                "Difficulty": 1
+            },
+            {
+                "LevelNumber": 12,
+                "NoQuestions": 15,
+                "NoMistakes": 7,
+                "Time": 2.0,
+                "Difficulty": 1
             },
             {
                 "LevelNumber": 13,
-                "NoQuestions": 7,
-                "NoMistakes": 2,
-                "Time": 1.0,
-                "Difficulty": 2
+                "NoQuestions": 15,
+                "NoMistakes": 7,
+                "Time": 1.5,
+                "Difficulty": 1
             },
             {
                 "LevelNumber": 14,
                 "NoQuestions": 15,
                 "NoMistakes": 5,
-                "Time": 2.5,
-                "Difficulty": 2
+                "Time": 2.0,
+                "Difficulty": 1
             },
             {
                 "LevelNumber": 15,
                 "NoQuestions": 15,
-                "NoMistakes": 1,
-                "Time": 3.0,
-                "Difficulty": 2
-            }
-        ]
-    },
-    {
-        "ChapterNumber": 2,
-        "ChapterName": "Bodmas",
-        "Levels": [
-            {
-                "LevelNumber": 1,
-                "NoQuestions": 5,
-                "NoMistakes": 3,
-                "Time": 1.0,
-                "Difficulty": 0
-            },
-            {
-                "LevelNumber": 2,
-                "NoQuestions": 10,
                 "NoMistakes": 5,
-                "Time": 1.5,
-                "Difficulty": 0
-            },
-            {
-                "LevelNumber": 3,
-                "NoQuestions": 7,
-                "NoMistakes": 2,
-                "Time": 1.0,
-                "Difficulty": 0
-            },
-            {
-                "LevelNumber": 4,
-                "NoQuestions": 15,
-                "NoMistakes": 5,
-                "Time": 2.5,
-                "Difficulty": 0
-            },
-            {
-                "LevelNumber": 5,
-                "NoQuestions": 15,
-                "NoMistakes": 1,
-                "Time": 3.0,
-                "Difficulty": 0
-            },
-            {
-                "LevelNumber": 6,
-                "NoQuestions": 5,
-                "NoMistakes": 3,
-                "Time": 1.0,
+                "Time": 1.75,
                 "Difficulty": 1
             },
             {
-                "LevelNumber": 7,
-                "NoQuestions": 10,
-                "NoMistakes": 5,
-                "Time": 1.5,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 8,
-                "NoQuestions": 7,
-                "NoMistakes": 2,
-                "Time": 1.0,
-                "Difficulty": 1
-            },
-            {
-                "LevelNumber": 9,
-                "NoQuestions": 15,
-                "NoMistakes": 5,
+                "LevelNumber": 16,
+                "NoQuestions": 20,
+                "NoMistakes": 10,
                 "Time": 2.5,
                 "Difficulty": 1
             },
             {
-                "LevelNumber": 10,
-                "NoQuestions": 15,
-                "NoMistakes": 1,
-                "Time": 3.0,
+                "LevelNumber": 17,
+                "NoQuestions": 20,
+                "NoMistakes": 7,
+                "Time": 2.5,
                 "Difficulty": 1
             },
             {
-                "LevelNumber": 11,
-                "NoQuestions": 5,
-                "NoMistakes": 3,
-                "Time": 1.0,
-                "Difficulty": 0
-            },
-            {
-                "LevelNumber": 12,
-                "NoQuestions": 10,
-                "NoMistakes": 5,
-                "Time": 1.5,
-                "Difficulty": 2
-            },
-            {
-                "LevelNumber": 13,
-                "NoQuestions": 7,
-                "NoMistakes": 2,
-                "Time": 1.0,
-                "Difficulty": 2
-            },
-            {
-                "LevelNumber": 14,
-                "NoQuestions": 15,
-                "NoMistakes": 5,
+                "LevelNumber": 18,
+                "NoQuestions": 20,
+                "NoMistakes": 7,
                 "Time": 2.5,
                 "Difficulty": 2
             },
             {
-                "LevelNumber": 15,
+                "LevelNumber": 19,
                 "NoQuestions": 15,
-                "NoMistakes": 1,
-                "Time": 3.0,
+                "NoMistakes": 5,
+                "Time": 2.0,
+                "Difficulty": 2
+            },
+            {
+                "LevelNumber": 20,
+                "NoQuestions": 15,
+                "NoMistakes": 5,
+                "Time": 1.5,
                 "Difficulty": 2
             }
         ]

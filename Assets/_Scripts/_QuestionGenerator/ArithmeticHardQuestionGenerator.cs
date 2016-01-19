@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-public class HardQuestionGenerator : IQuestionGenerator {
+public class ArithmeticHardQuestionGenerator : IQuestionGenerator {
 
     char[] operations = new char[] { 'x', '/' };
 

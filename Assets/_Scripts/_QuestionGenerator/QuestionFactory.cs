@@ -25,11 +25,11 @@ public class QuestionFactory {
         switch (level)
         {
             case Question.QUESTION_LEVEL.BASIC:
-                return new BasicQuestionGenerator();
+                return new ArithmeticBasicQuestionGenerator();
             case Question.QUESTION_LEVEL.MEDIUM:
-                return new MediumQuestionGenerator();
+                return new ArithmeticMediumQuestionGenerator();
             case Question.QUESTION_LEVEL.HARD:
-                return new HardQuestionGenerator();
+                return new ArithmeticHardQuestionGenerator();
             default:
                 break;
         }

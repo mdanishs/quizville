@@ -3,6 +3,12 @@ using System.Collections;
 
 public class GameConstants {
 
+    public enum CHAPTERS
+    {
+        ARITHMETIC = 1,
+        BODMAS
+    }
+
     /** SCENE NAMES **/
     public static readonly string MENU_SCENE = "MainMenuScene";
     public static readonly string GAME_PLAY_SCENE = "GamePlayScene";
