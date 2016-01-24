@@ -3,10 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class BasicBodmasQuestionGenerator : IQuestionGenerator {
-
-    char[] operators = new char[] { '+', '-', 'x', '/' };
-
+public class BasicBodmasQuestionGenerator : BaseBodmasQuestionGenerator {
+    
     List<Question> Questions;
 
     public BasicBodmasQuestionGenerator()
@@ -14,7 +12,7 @@ public class BasicBodmasQuestionGenerator : IQuestionGenerator {
         Questions = new List<Question>();
     }
 
-    public List<Question> GenerateQuestions(int numberOfQuestions)
+    public override List<Question> GenerateQuestions(int numberOfQuestions)
     {
         while (Questions.Count < numberOfQuestions)
         {
@@ -37,7 +35,10 @@ public class BasicBodmasQuestionGenerator : IQuestionGenerator {
                 existingQuestion = Questions.Where<Question>(q => q.Text == question).FirstOrDefault();
 
             if (existingQuestion == null)
-                Questions.Add(new Question(question, "To be evaluated"));
+            {
+                Questions.Add(new Question(question, GenerateAnswer(question)));
+                Debug.Log(question + " " + GenerateAnswer(question));
+            }
         }
 
         return Questions;

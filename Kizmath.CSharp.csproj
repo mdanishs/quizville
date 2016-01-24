@@ -106,6 +106,7 @@
     <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticHardQuestionGenerator.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticMediumQuestionGenerator.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\_ArithmeticQuestionGenerator\ArithmeticQuestionFactory.cs" />
+    <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\BaseBodmasQuestionGenerator.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\BasicBodmasQuestionGenerator.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\BodmasQuestionFactory.cs" />
     <Compile Include="Assets\_Scripts\_QuestionGenerator\_BodmasQuestionGenerator\HardBodmasQuestionGenerator.cs" />
